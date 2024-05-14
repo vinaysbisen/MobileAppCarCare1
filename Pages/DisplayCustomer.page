@@ -1,0 +1,196 @@
+{
+	"Controls": [
+		{
+			"FilterFeedbackBar": {
+				"ShowAllFilters": false,
+				"FastFilters": [
+					{
+						"_Type": "Control.Type.FastFilterItem",
+						"_Name": "FastFilter0"
+					},
+					{
+						"_Type": "Control.Type.FastFilterItem",
+						"_Name": "FastFilter1",
+						"Label": "Site"
+					},
+					{
+						"_Type": "Control.Type.FastFilterItem",
+						"_Name": "FastFilter2"
+					},
+					{
+						"_Type": "Control.Type.FastFilterItem",
+						"_Name": "FastFilter3"
+					}
+				],
+				"_Type": "Control.Type.FilterFeedbackBar"
+			},
+			"_Type": "Control.Type.SectionedTable",
+			"Target": {
+				"Service": "/carcare3/Services/com_sap_mdk_Eyasset_CLONING.service",
+				"EntitySet": "ZC_OFF_CARCARE"
+			},
+			"_Name": "SectionedTable0",
+			"Sections": [
+				{
+					"Separators": {
+						"TopSectionSeparator": false,
+						"BottomSectionSeparator": true,
+						"HeaderSeparator": true,
+						"FooterSeparator": true,
+						"ControlSeparator": true
+					},
+					"_Type": "Section.Type.ContactCell",
+					"Target": {
+						"Service": "/carcare3/Services/com_sap_mdk_Eyasset_CLONING.service",
+						"EntitySet": "ZC_OFF_CARCARE"
+					},
+					"_Name": "SectionContactCell2",
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"ContactCell": {
+						"Visible": true,
+						"ContextMenu": {
+							"PerformFirstActionWithFullSwipe": true,
+							"Items": "{PlateCode}"
+						},
+						"DetailImage": "res://contact.png",
+						"Headline": "{Site}",
+						"Subheadline": "{MobileNum}",
+						"Description": "{Model}"
+					},
+					"DataPaging": {
+						"ShowLoadingIndicator": true,
+						"LoadingIndicatorText": "Please Wait..",
+						"PageSize": 50
+					},
+					"Search": {
+						"Enabled": true
+					}
+				},
+				{
+					"_Type": "Section.Type.DataTable",
+					"Target": {
+						"Service": "/carcare3/Services/com_sap_mdk_Eyasset_CLONING.service",
+						"EntitySet": "ZC_OFF_CARCARE",
+						"ServerSidePaging": true
+					},
+					"_Name": "SectionDataTable0",
+					"Header": {
+						"_Name": "SectionDataTableHeader1",
+						"AccessoryType": "None",
+						"UseTopPadding": true,
+						"DataTable": {
+							"Items": [
+								{
+									"Text": "Site",
+									"NumberOfLines": 1
+								},
+								{
+									"Text": "Plate No",
+									"NumberOfLines": 1
+								},
+								{
+									"Text": "Plate Code",
+									"NumberOfLines": 1
+								},
+								{
+									"Text": "Mobile",
+									"NumberOfLines": 1
+								}
+							],
+							"Layout": {
+								"ColumnWidth": []
+							}
+						}
+					},
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"Separators": {
+						"TopSectionSeparator": false,
+						"BottomSectionSeparator": true,
+						"HeaderSeparator": true,
+						"FooterSeparator": true,
+						"ControlSeparator": true
+					},
+					"EditMode": "None",
+					"Row": {
+						"Items": [
+							{
+								"Value": "{PlateNum}",
+								"DisplayType": "Text",
+								"EditType": "Text",
+								"NumberOfLines": 1,
+								"TextAlignment": "Left",
+								"ListPicker": {
+									"PickerItems": [],
+									"Value": "ZC_OFF_CARCAREType/PlateNum"
+								}
+							},
+							{
+								"Value": "{PlateCode}",
+								"DisplayType": "Text",
+								"EditType": "Text",
+								"NumberOfLines": 1,
+								"TextAlignment": "Left",
+								"ListPicker": {
+									"PickerItems": []
+								}
+							},
+							{
+								"Value": "{MobileNum}",
+								"DisplayType": "Text",
+								"EditType": "Text",
+								"NumberOfLines": 1,
+								"TextAlignment": "Left",
+								"ListPicker": {
+									"PickerItems": []
+								}
+							},
+							{
+								"Value": "{Site}",
+								"DisplayType": "Text",
+								"EditType": "Text",
+								"NumberOfLines": 1,
+								"TextAlignment": "Left",
+								"ListPicker": {
+									"Caption": "ZC_OFF_CARCAREType/Site",
+									"PickerItems": [],
+									"Value": "ZC_OFF_CARCAREType/Site"
+								}
+							}
+						],
+						"Layout": {
+							"ColumnWidth": []
+						}
+					},
+					"DataPaging": {
+						"ShowLoadingIndicator": false,
+						"PageSize": 50
+					}
+				}
+			]
+		}
+	],
+	"_Type": "Page",
+	"_Name": "DisplayCustomer",
+	"Caption": "DisplayCustomer",
+	"PrefersLargeCaption": true,
+	"ActionBar": {
+		"Items": [
+			{
+				"_Name": "ActionBarItem0",
+				"Caption": "Item",
+				"Icon": "sap-icon://key-user-settings",
+				"Position": "Right",
+				"IsIconCircular": false,
+				"Visible": true,
+				"OnPress": "/carcare3/Actions/Application/UserMenuPopover.action"
+			}
+		],
+		"_Name": "ActionBar1"
+	}
+}

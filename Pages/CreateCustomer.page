@@ -1,0 +1,128 @@
+{
+	"Controls": [
+		{
+			"FilterFeedbackBar": {
+				"ShowAllFilters": false,
+				"_Type": "Control.Type.FilterFeedbackBar"
+			},
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable0",
+			"Sections": [
+				{
+					"Separators": {
+						"TopSectionSeparator": false,
+						"BottomSectionSeparator": true,
+						"HeaderSeparator": true,
+						"FooterSeparator": true,
+						"ControlSeparator": true
+					},
+					"Controls": [
+						{
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "FCCreateSite",
+							"IsVisible": true,
+							"Separator": true,
+							"Caption": "Site",
+							"PlaceHolder": "Enter Site",
+							"Enabled": true,
+							"IsEditable": true
+						},
+						{
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "FCCreatePlateCode",
+							"IsVisible": true,
+							"Separator": true,
+							"Caption": "Plate Code",
+							"PlaceHolder": "Enter Code",
+							"Enabled": true,
+							"IsEditable": true
+						},
+						{
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "FCCreatePlateNo",
+							"IsVisible": true,
+							"Separator": true,
+							"Caption": "Plate No",
+							"PlaceHolder": "Enter No",
+							"Enabled": true,
+							"IsEditable": true
+						},
+						{
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "FCCreatePhone",
+							"IsVisible": true,
+							"Separator": true,
+							"Caption": "Phone",
+							"PlaceHolder": "Enter No",
+							"Enabled": true,
+							"IsEditable": true
+						},
+						{
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "FCCreateModel",
+							"IsVisible": true,
+							"Separator": true,
+							"Caption": "Model",
+							"PlaceHolder": "Enter Email",
+							"Enabled": true,
+							"IsEditable": true
+						},
+						{
+							"Value": "Enter Date",
+							"_Type": "Control.Type.FormCell.DatePicker",
+							"_Name": "FCCreateCreatedOn",
+							"IsVisible": true,
+							"Separator": true,
+							"Caption": "Created On",
+							"IsEditable": true,
+							"Mode": "Date"
+						},
+						{
+							"Value": "Enter Date",
+							"_Type": "Control.Type.FormCell.DatePicker",
+							"_Name": "FCCreateCreatedAt",
+							"IsVisible": true,
+							"Separator": true,
+							"Caption": "Created At",
+							"IsEditable": true,
+							"Mode": "Time"
+						}
+					],
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"_Type": "Section.Type.FormCell",
+					"_Name": "SectionFormCell1"
+				}
+			]
+		}
+	],
+	"_Type": "Page",
+	"_Name": "CreateCustomer",
+	"Caption": "CreateCustomer",
+	"PrefersLargeCaption": true,
+	"ActionBar": {
+		"Items": [
+			{
+				"_Name": "ActionBarItem0",
+				"Caption": "Item",
+				"SystemItem": "Save",
+				"Position": "Left",
+				"IsIconCircular": false,
+				"Visible": true,
+				"OnPress": "/carcare3/Actions/CreateCustomer_Entity.action"
+			},
+			{
+				"_Name": "ActionBarItem1",
+				"Caption": "Cancel",
+				"SystemItem": "Cancel",
+				"Position": "Right",
+				"IsIconCircular": false,
+				"Visible": true,
+				"OnPress": "/carcare3/Actions/CreateCustomerCancel.action"
+			}
+		],
+		"_Name": "ActionBar1"
+	}
+}

@@ -1,0 +1,13 @@
+{
+    "Service": "/carcare3/Services/com_sap_mdk_Eyasset_CLONING.service",
+    "DefiningRequests": [{
+        "Name": "ZC_OFF_CARCARE",
+        "Query": "ZC_OFF_CARCARE"
+    }],
+    "_Type": "Action.Type.OfflineOData.Download",
+    "ActionResult": {
+        "_Name": "sync"
+    },
+    "OnFailure": "/carcare3/Actions/com_sap_mdk_Eyasset_CLONING/Service/SyncFailureMessage.action",
+    "OnSuccess": "/carcare3/Rules/ErrorArchive/ErrorArchive_CheckForSyncError.js"
+}

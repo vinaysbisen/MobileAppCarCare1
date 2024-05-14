@@ -1,0 +1,9 @@
+{
+	"_Type": "Action.Type.ClosePage",
+	"ActionResult": {
+		"_Name": "CreateCustomerCancel"
+	},
+	"DismissModal": "Action.Type.ClosePage.Canceled",
+	"CancelPendingActions": true,
+	"NavigateBackToPage": "LandingScreen"
+}

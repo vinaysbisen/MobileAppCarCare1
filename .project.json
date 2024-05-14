@@ -1,0 +1,61 @@
+{
+	"Credential": "cf",
+	"Template": {
+		"Id": "@ext-mdkvsc-npm-dev/generator-mdk",
+		"Name": "List Detail",
+		"Version": "0.0.1"
+	},
+	"CF": {
+		"Target": "https://api.cf.us10-001.hana.ondemand.com",
+		"Organization": "6149bcf8-a467-4530-bf63-1a4e02c8887a",
+		"Space": "f4b0d0ce-b8a9-458c-89ce-7bdc1c577e6f",
+		"Deploy": {
+			"Description": "",
+			"WebClient": {
+				"Runtime": "production",
+				"URL": "https://mdk-webclient-runtime.cfapps.us10.hana.ondemand.com/runtime/"
+			},
+			"Destination": [
+				{
+					"CF": "com_sap_mdk_Eyasset_CLONING",
+					"MDK": "com_sap_mdk_Eyasset_CLONING",
+					"URL": ""
+				}
+			],
+			"Name": "ns.carcare3",
+			"Version": "1.0.0",
+			"AppRouter": "standalone",
+			"Auth": true,
+			"URL": "https://454f92e7trial-dev-nscarcare3-approuter.cfapps.us10-001.hana.ondemand.com/nscarcare3"
+		}
+	},
+	"MobileService": {
+		"Type": "standard",
+		"AdminAPI": "https://mobile-service-cockpit-api.cfapps.us10.hana.ondemand.com/cockpit/v1/org/6149bcf8-a467-4530-bf63-1a4e02c8887a/space/f4b0d0ce-b8a9-458c-89ce-7bdc1c577e6f",
+		"AppId": "com.sap.carcare",
+		"Destination": [
+			"com.sap.carcare",
+			"com.sap.carcare2",
+			"com_sap_mdk_Eyasset",
+			"com_sap_mdk_Eyasset_CLONING"
+		]
+	},
+	"Onboarding": {
+		"Schema": "sapmobilesvcs",
+		"TimeZone": "UTC",
+		"URL": "sapmobilesvcs://?AppId=com.sap.carcare&ClientId=3bca47ef-ed89-4066-88ce-2a6dd7218431&ServerUrl=https://454f92e7trial-dev-com-sap-carcare.cfapps.us10-001.hana.ondemand.com&SapCloudPlatformEndpoint=https://454f92e7trial-dev-com-sap-carcare.cfapps.us10-001.hana.ondemand.com&AuthorizationEndpointUrl=https://454f92e7trial-dev-com-sap-carcare.cfapps.us10-001.hana.ondemand.com/oauth2/api/v1/authorize&RedirectUrl=https://454f92e7trial-dev-com-sap-carcare.cfapps.us10-001.hana.ondemand.com&TokenUrl=https://454f92e7trial-dev-com-sap-carcare.cfapps.us10-001.hana.ondemand.com/oauth2/api/v1/token&multiUser=false"
+	},
+	"LCAP": {
+		"FullName": "",
+		"Service": [],
+		"sourceTemplate": {
+			"id": "html5moduletemplates.basicSAPUI5ApplicationProjectModule",
+			"version": "1.40.12"
+		}
+	},
+	"Build": {
+		"SourceMap": true,
+		"TSTarget": "es6",
+		"WMF": true
+	}
+}

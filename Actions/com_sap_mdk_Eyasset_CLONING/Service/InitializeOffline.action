@@ -1,0 +1,14 @@
+{
+    "Service": "/carcare3/Services/com_sap_mdk_Eyasset_CLONING.service",
+    "DefiningRequests": [{
+        "Name": "ZC_OFF_CARCARE",
+        "Query": "ZC_OFF_CARCARE"
+    }],
+    "_Type": "Action.Type.ODataService.Initialize",
+    "ShowActivityIndicator": true,
+    "ActivityIndicatorText": "Downloading...",
+    "ActionResult": {
+        "_Name": "init"
+    },
+    "OnFailure": "/carcare3/Actions/com_sap_mdk_Eyasset_CLONING/Service/InitializeOfflineFailureMessage.action"
+}

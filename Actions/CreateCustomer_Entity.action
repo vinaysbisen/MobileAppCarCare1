@@ -1,0 +1,22 @@
+{
+	"_Type": "Action.Type.ODataService.CreateEntity",
+	"ActionResult": {
+		"_Name": "CreateCustomer_Entity"
+	},
+	"OnFailure": "/carcare3/Actions/CreateCustomerEntityFailureMessage.action",
+	"OnSuccess": "/carcare3/Actions/CloseModalPage_Complete.action",
+	"ValidationRule": "/carcare3/Rules/SiteValidation.js",
+	"Target": {
+		"Service": "/carcare3/Services/com_sap_mdk_Eyasset_CLONING.service",
+		"EntitySet": "ZC_OFF_CARCARE"
+	},
+	"Properties": {
+		"Site": "#Page:CreateCustomer/#Control:FCCreateSite/#Value",
+		"PlateNum": "#Page:CreateCustomer/#Control:FCCreatePlateNo/#Value",
+		"PlateCode": "#Page:CreateCustomer/#Control:FCCreatePlateCode/#Value",
+		"MobileNum": "#Page:CreateCustomer/#Control:FCCreatePhone/#Value",
+		"CreatedOn": "#Page:CreateCustomer/#Control:FCCreateCreatedOn/#Value",
+		"CreatedAt": "#Page:CreateCustomer/#Control:FCCreateCreatedAt/#Value",
+		"Model": "#Page:CreateCustomer/#Control:FCCreateModel/#Value"
+	}
+}

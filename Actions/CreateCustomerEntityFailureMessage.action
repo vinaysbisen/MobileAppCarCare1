@@ -1,0 +1,10 @@
+{
+	"_Type": "Action.Type.Message",
+	"ActionResult": {
+		"_Name": "CreateCustomerEntityFailureMessage"
+	},
+	"OnSuccess": "/carcare3/Actions/CloseModalPage_Complete.action",
+	"Message": "Failed to Create Customer record ",
+	"Title": "Create Customer",
+	"OKCaption": "OK"
+}

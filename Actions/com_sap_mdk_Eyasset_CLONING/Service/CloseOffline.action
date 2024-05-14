@@ -1,0 +1,10 @@
+{
+    "_Type": "Action.Type.OfflineOData.Close",
+    "Service": "/carcare3/Services/com_sap_mdk_Eyasset_CLONING.service",
+    "Force": true,
+    "ActionResult": {
+        "_Name": "close"
+    },
+    "OnSuccess": "/carcare3/Actions/com_sap_mdk_Eyasset_CLONING/Service/CloseOfflineSuccessMessage.action",
+    "OnFailure": "/carcare3/Actions/com_sap_mdk_Eyasset_CLONING/Service/CloseOfflineFailureMessage.action"
+}

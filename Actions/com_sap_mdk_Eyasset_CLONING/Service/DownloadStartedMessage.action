@@ -1,0 +1,7 @@
+{
+    "Message": "Download in progress...",
+    "CompletionMessage": "Download Successful",
+    "CompletionTimeout": 7,
+    "OnSuccess": "/carcare3/Actions/com_sap_mdk_Eyasset_CLONING/Service/DownloadOffline.action",
+    "_Type": "Action.Type.ProgressBanner"
+}
